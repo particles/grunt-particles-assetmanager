@@ -1,0 +1,21 @@
+blabla
+
+  // INJECT-SCRIPTS-START[default]
+  script(type="text/javascript", src="/public/scripts/script1.js")
+  script(type="text/javascript", src="/public/scripts/script2.js")
+  script(type="text/javascript", src="/public/script.js")
+  script(type="text/javascript", src="http://this_is_a_url/ok.js")
+  // INJECT-SCRIPTS-END[default]
+
+// INJECT-CSS-START[default]
+link(rel='stylesheet', href='/public/testless.css')
+link(rel='stylesheet', href='/public/test.css')
+link(rel='stylesheet', href='http://this_is_a_url/css.js')
+// INJECT-CSS-END[default]
+
+
+    // VIEW-CONTRIBUTION-START[myview]
+    include view3.jade
+    // VIEW-CONTRIBUTION-END[myview]
+
+blabla

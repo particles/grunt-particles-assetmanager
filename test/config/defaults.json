@@ -1,0 +1,15 @@
+{
+  "generatedDir": "${appRoot}/tmp",
+  "assets": {
+    "defaultNamespace": "default",
+    "viewsDir": "${generatedDir}/views/",
+    "assetsDir": "${generatedDir}/assets/",
+    "publicUrlRoot": "public"
+  },
+  "particles": {
+    "app": {
+      "services": ["svc|sequence!grunt/configure_grunt"],
+      "particles": ["${appRoot}/test/roots/*", "${appRoot}/lib"]
+    }
+  }
+}
