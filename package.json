@@ -1,7 +1,7 @@
 {
   "name": "grunt-particles-assetmanager",
   "description": "An asset manager for the Particles platform, based on Grunt",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/particles/grunt-particles-assetmanager",
   "author": {
     "name": "Mario Casciaro"
