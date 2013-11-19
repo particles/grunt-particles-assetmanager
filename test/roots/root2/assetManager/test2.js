@@ -13,10 +13,16 @@ module.exports = {
   },
 
   use_scripts: function() {
-    return [ {file: {cwd: __dirname + "/../../../fixtures/assets2", file: "scripts/*.js" }}]
+    return {
+      default:  [
+        {cwd: __dirname + "/../../../fixtures/assets2", file: "scripts/*.js" }
+      ]
+    };
   },
 
   use_stylesheets: function() {
-    return ['testless.less'];
+    return {
+      default:  ['testless.less']
+    };
   }
 };

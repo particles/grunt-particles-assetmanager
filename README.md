@@ -39,7 +39,6 @@ the Scatter container.
 * `assets.viewsDir`
 * `assets.assetsDir`
 * `[assets.publicUrlRoot]`
-* `[assets.defaultNamespace]`
 
 ### Example config
 

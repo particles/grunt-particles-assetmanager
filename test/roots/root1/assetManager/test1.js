@@ -13,11 +13,15 @@ module.exports = {
   },
   
   use_scripts: function() {
-    return ["script.js", "http://this_is_a_url/ok.js"];
+    return {
+      default: ["script.js", ["http://this_is_a_url/ok.js"]]
+    };
   },
 
   use_stylesheets: function() {
-    return ["test.css", "http://this_is_a_url/css.js"];
+    return {
+      default: ["test.css", "http://this_is_a_url/css.js"]
+    };
   },
 
   contribute_views: function() {
