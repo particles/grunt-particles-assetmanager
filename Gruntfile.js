@@ -22,8 +22,10 @@ module.exports = function(grunt) {
       test: {
         options: {
           runServices: ['svc|sequence!grunt/configure_grunt'],
-          appRoot: __dirname,
-          configDir: __dirname + "/test/config"
+          config: {
+            appRoot: __dirname,
+            configDir: __dirname + "/test/config"
+          }
         }
       }
     },
