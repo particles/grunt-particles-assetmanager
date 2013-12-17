@@ -17,25 +17,15 @@ module.exports = function(grunt) {
       tests: ['tmp']
     },
 
-    // Configuration to be run (and then tested).
-    particles: {
-      test: {
-        options: {
-          runServices: ['svc|sequence!grunt/configure_grunt'],
-          config: {
-            appRoot: __dirname,
-            configDir: __dirname + "/test/config"
-          }
-        }
-      }
-    },
-
     // Unit tests.
     nodeunit: {
       test:  ['test/test.js']
     }
 
   });
+
+  grunt.option('appRoot', __dirname);
+  grunt.option('configDir', __dirname + "/test/config");
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-particles');
@@ -51,7 +41,7 @@ module.exports = function(grunt) {
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
 
-  grunt.registerTask('test', ['clean', 'particles:test', 'particles-build', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'particles-build', 'nodeunit']);
   
   // By default, lint and run all tests.
   grunt.registerTask('default', ['test']);

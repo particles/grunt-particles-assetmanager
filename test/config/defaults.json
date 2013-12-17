@@ -6,9 +6,8 @@
     "assetsDir": "${generatedDir}/assets/",
     "publicUrlRoot": "public"
   },
-  "particles": {
-    "app": {
-      "services": ["svc|sequence!grunt/configure_grunt"],
+  "containers": {
+    "default": {
       "particles": ["${appRoot}/test/roots/*", "${appRoot}/lib"]
     }
   }
