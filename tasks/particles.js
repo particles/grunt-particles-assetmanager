@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         configDir: grunt.option('configDir'),
         appRoot: grunt.option('appRoot')
       },
-      runService: 'svc|pipeline!grunt/grunt_configure',
+      runService: 'svc|pipeline!grunt/configure',
       serviceArgs: [{grunt: grunt}]
     });
     

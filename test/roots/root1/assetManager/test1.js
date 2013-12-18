@@ -1,7 +1,10 @@
 
 module.exports = {
   __module: {
-    provides: ["use_scripts", "use_stylesheets", "register_assets_dir", "register_views_dir", "contribute_views"]
+    provides: [
+      "assetManager/use_scripts", "assetManager/use_stylesheets", 
+      "assetManager/register_assets_dir", "assetManager/register_views_dir", "assetManager/contribute_views"
+    ]
   },
 
   register_assets_dir: function() {
