@@ -55,6 +55,7 @@ module.exports = function(grunt) {
       grunt.task.run(_.unique(res.tasks.clean));
       grunt.task.run(_.unique(res.tasks.build));
       grunt.task.run(_.unique(res.tasks.develop));
+      grunt.task.run('watch');
       
       done();
     }).otherwise(done);
