@@ -44,7 +44,7 @@ exports.particles = {
     test.done();
   },
 
-  recess: function(test) {
+  less: function(test) {
     test.expect(1);
 
     var actual = grunt.file.read('tmp/assets/testless.css');
